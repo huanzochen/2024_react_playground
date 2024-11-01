@@ -3,7 +3,8 @@
 }
 
 .App-logo {
-  height: 38vmin;
+  /* 假設我要他佔據小的那個邊的 40% */
+  height: 40vmin;
   pointer-events: none;
 }
 

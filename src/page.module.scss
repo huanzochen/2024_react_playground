@@ -1,3 +1,26 @@
-.test {
-  color: red;
+.container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabList {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+}
+
+.tab {
+  border: 2px solid rgb(108, 147, 108);
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: rgb(189, 224, 189);
+  }
 }
