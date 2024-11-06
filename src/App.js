@@ -4,6 +4,7 @@ import cx from "classnames";
 import styles from "./page.module.scss";
 // https://github.com/reactjs/react-tabs/tree/v4.2.1
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import TabSwiper from "./component/TabSwiper";
 
 const TABS = [
   { id: 0, name: "全部優惠", description: "全部優惠的列表" },
@@ -44,14 +45,20 @@ function App() {
       <h2>Custom Tabs</h2>
       <div>
         <div className={cx(styles.container, styles.tabList)}>
-          {TABS.map((TAB) => (
-            <div className={styles.tab} onClick={selectTabs(TAB.id)}>
+          {TABS.map((TAB, index) => (
+            <div
+              key={index}
+              className={styles.tab}
+              onClick={selectTabs(TAB.id)}
+            >
               {TAB.name}
             </div>
           ))}
         </div>
         {renderTabPanel()}
       </div>
+
+      <TabSwiper />
     </div>
   );
 }

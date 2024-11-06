@@ -1,0 +1,21 @@
+.tabContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #a04df8;
+}
+
+.tabWrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.tabSlide {
+  min-width: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-right: 10px;
+}
